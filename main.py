@@ -15,7 +15,7 @@ guessed_states = []
 
 
 while len(guessed_states) < 50:
-    answer_state = screen.textinput(title = "Guess the State", prompt="What is another state is name?")
+    answer_state = screen.textinput(title = "Guess the State", prompt="What is another state is name?").title()
 
 
     if answer_state in all_states:
